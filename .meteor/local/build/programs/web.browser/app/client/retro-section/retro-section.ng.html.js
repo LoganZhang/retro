@@ -1,0 +1,3 @@
+(function(){angular.module('angular-meteor').run(['$templateCache', function($templateCache) {$templateCache.put("client/retro-section/retro-section.ng.html", "<div> {{section.name}} <form class=\"new-task\" ng-submit=\"addTask(newTask); newTask='';\"> <input ng-model=\"newTask\" type=\"text\" name=\"text\" placeholder=\"Type to add new tasks\"> </form> <ul ng-repeat=\"task in tasks\"> <li ng-class=\"{'checked': task.checked}\"> <button class=\"delete\" ng-click=\"deleteTask(task)\">&times;</button> <input type=\"checkbox\" ng-checked=\"task.checked\" ng-click=\"setChecked(task)\" class=\"toggle-checked\"> <span class=\"text\">{{task.text}}</span> </li> </ul> </div>");}]);
+
+})();
